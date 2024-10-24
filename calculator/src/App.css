@@ -60,7 +60,7 @@ button:active {
   background-color: #aaa; /* Jeszcze ciemniejszy szary przy naciśnięciu */
 }
 
-button.equal {
+button.buttonEqual {
   color: white;
   background: linear-gradient(
     45deg,
@@ -69,10 +69,18 @@ button.equal {
   ); /* Fioletowo-pomarańczowy gradient */
 }
 
-button.equal:hover {
+button.buttonEqual:hover {
   background: linear-gradient(
     45deg,
     #954c2a,
     #5b1c73
   ); /* Ciemniejszy gradient przy najechaniu */
+}
+
+.wynik {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: blue; /* Przykładowe formatowanie */
 }

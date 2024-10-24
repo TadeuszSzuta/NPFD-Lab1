@@ -1,4 +1,3 @@
-// src/Kalkulator.js
 import React, { useState } from "react";
 
 const Kalkulator = () => {
@@ -23,12 +22,30 @@ const Kalkulator = () => {
     setWynik("");
   };
 
+  // Funkcja do przypisania odpowiednich klas dla przycisków operacji
+  const getButtonClass = (button) => {
+    switch (button) {
+      case "+":
+        return "buttonPlus";
+      case "-":
+        return "buttonMinus";
+      case "*":
+        return "buttonMultiply";
+      case "/":
+        return "buttonDivide";
+      case "=":
+        return "buttonEqual";
+      default:
+        return `button${button}`; // Dla cyfr i innych znaków
+    }
+  };
+
   return (
     <div style={{ padding: "20px" }}>
       <h1>Calculator</h1>
       <div>
-        <input type="text" value={input} readOnly />
-        <div>{wynik}</div>
+        <input class="display" type="text" value={input} readOnly />
+        <div class="wynik">{wynik}</div>
       </div>
       <div>
         {[
@@ -51,7 +68,7 @@ const Kalkulator = () => {
         ].map((button) => (
           <button
             key={button}
-            className={button === "=" ? "equal" : ""}
+            className={getButtonClass(button)} // Przypisujemy klasę na podstawie znaku przycisku
             onClick={() => {
               if (button === "=") {
                 oblicz();
