@@ -1,4 +1,4 @@
-describe("Checks if 1+2=3 and is displayed correctly", () => {
+describe("Checks if 1+2=3 and fi it is displayed correctly", () => {
   it("passes", () => {
     cy.visit("http://localhost:3000");
 
@@ -9,6 +9,6 @@ describe("Checks if 1+2=3 and is displayed correctly", () => {
     cy.get(".display").should("have.value", "1+2");
     cy.get(".buttonEqual").click();
     cy.get(".display").should("have.value", "");
-    cy.get(".wynik").should("have.text", `${eval(1 + 2)}`);
+    cy.get(".wynik").should("have.text", "3");
   });
 });
