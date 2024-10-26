@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 1vw;
+}
+.field {
+  border: gray 1px dashed;
+  border-radius: 4px;
+}
+
+div {
+  margin-bottom: 26px;
+}
+label {
+  margin-right: 4px;
+}
