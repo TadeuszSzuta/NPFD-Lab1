@@ -1,4 +1,4 @@
-describe("Checks if 1+2=3 and fi it is displayed correctly", () => {
+describe("Checks if 1+2=3 and if it is displayed correctly", () => {
   it("passes", () => {
     cy.visit("http://localhost:3000");
 
