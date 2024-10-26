@@ -7,7 +7,7 @@ const user = {
   bd: "2001-01-01",
 };
 
-describe("template spec", () => {
+describe("Registers, logs in and displays user information", () => {
   it("passes", () => {
     cy.visit("http://localhost:3000");
 

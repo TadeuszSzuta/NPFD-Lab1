@@ -92,7 +92,11 @@ const RegisterForm = ({ onRegister }) => {
         <button type="submit" className="submit">
           Zarejestruj
         </button>
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && (
+          <p className="error" style={{ color: "red" }}>
+            {error}
+          </p>
+        )}
       </form>
     </div>
   );
