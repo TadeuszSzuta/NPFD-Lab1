@@ -1,17 +1,20 @@
 /* src/App.css */
+@font-face {
+  font-family: Ubuntu;
+  src: url("../public/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: Ubuntu, sans-serif;
+  background-color: #2d3436;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
 }
-
 .App {
-  background-color: white;
+  background-color: #636e72;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -21,6 +24,7 @@ body {
 h1 {
   text-align: center;
   font-size: 24px;
+  color: #dfe6e9;
 }
 
 input {
@@ -40,40 +44,49 @@ div {
 }
 
 button {
+  color: #2d3436;
   flex: 1 0 21%; /* Dostosowuje szerokość przycisków */
   padding: 15px;
   margin: 5px;
   font-size: 18px;
   border: none;
   border-radius: 4px;
-  background-color: #ccc; /* Szary kolor dla wszystkich przycisków */
-  color: black;
+  background-color: #b2bec3; /* Szary kolor dla wszystkich przycisków */
+  color: 2a2a2a;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #bbb; /* Ciemniejszy szary przy najechaniu */
+  background-color: #a0abb0; /* Ciemniejszy szary przy najechaniu */
 }
 
 button:active {
-  background-color: #aaa; /* Jeszcze ciemniejszy szary przy naciśnięciu */
+  background-color: #8e989c; /* Jeszcze ciemniejszy szary przy naciśnięciu */
 }
 
 button.buttonEqual {
   color: white;
   background: linear-gradient(
     45deg,
-    #a65e2e,
-    #6b2a91
+    #fdcb6e,
+    #e17055
   ); /* Fioletowo-pomarańczowy gradient */
 }
 
 button.buttonEqual:hover {
   background: linear-gradient(
     45deg,
-    #954c2a,
-    #5b1c73
+    #e4b763,
+    #cb654d
+  ); /* Ciemniejszy gradient przy najechaniu */
+}
+
+button.buttonEqual:active {
+  background: linear-gradient(
+    45deg,
+    #caa258,
+    #b45a44
   ); /* Ciemniejszy gradient przy najechaniu */
 }
 
@@ -82,5 +95,11 @@ button.buttonEqual:hover {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: blue; /* Przykładowe formatowanie */
+  color: #fdcb6e; /* Przykładowe formatowanie */
+}
+
+.display {
+  background-color: #b2bec3;
+  border: none;
+  color: #2d3436;
 }
